@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>楽天API</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  </head>
+<body>
+  <form action="">
+    <div>
+      <input id="search-input"  type="text"  value="">
+      <input id="search-buttom" class="fas" type="button" value="検索" method="get">
+    </div>
+    <div class="navi2">
+      <input value="ジャンル" class="gener" type="button">
+      <div class="cate display_none">
+        <p><input data-value="RSFST01000" value="RSFST01000" class="sort" type="button">和食</p>
+        <p><input data-value="RSFST02000" value="RSFST02000" class="sort" type="button">日本料理・郷土料理</p>
+        <p><input data-value="RSFST03000" value="RSFST03000" class="sort" type="button">すし・魚料理・シーフード</p>
+        <p><input data-value="RSFST04000" value="RSFST04000" class="sort" type="button">鍋</p>
+        <p><input data-value="RSFST05000" value="RSFST05000" class="sort" type="button">焼肉・ホルモン</p>
+        <p><input data-value="RSFST06000" value="RSFST06000" class="sort" type="button">焼き鳥・肉料理・串料理</p>
+        <p><input data-value="RSFST07000" value="RSFST07000" class="sort" type="button">お好み焼き・ホルモン</p>
+        <p><input data-value="RSFST08000" value="RSFST08000" class="sort" type="button">ラーメン・麺料理</p>
+        <p><input data-value="RSFST09000" value="RSFST09000" class="sort" type="button">居酒屋</p>
+        <p><input data-value="RSFST10000" value="RSFST10000" class="sort" type="button">バー・ビアホール</p>
+        <p><input data-value="RSFST11000" value="RSFST11000" class="sort" type="button">イタリアン・フレンチ</p>
+        <p><input data-value="RSFST12000" value="RSFST12000" class="sort" type="button">欧米・各国料理</p>
+        <p><input data-value="RSFST13000" value="RSFST13000" class="sort" type="button">洋食</p>
+        <p><input data-value="RSFST14000" value="RSFST14000" class="sort" type="button">中華</p>
+        <p><input data-value="RSFST15000" value="RSFST15000" class="sort" type="button">アジア・エスニック料理</p>
+        <p><input data-value="RSFST16000" value="RSFST16000" class="sort" type="button">カレー</p>   
+        <p><input data-value="RSFST17000" value="RSFST17000" class="sort" type="button">オーガニック・創作料理</p>
+        <p><input data-value="RSFST18000" value="RSFST18000" class="sort" type="button">カフェ・スイーツ</p>
+        <p><input data-value="RSFST19000" value="RSFST19000" class="sort" type="button">宴会・カラオケ・エンターテインメント</p>
+        <p><input data-value="RSFST20000" value="RSFST20000" class="sort" type="button">ファミレス・ファストフード</p>
+        <p><input data-value="RSFST21000" value="RSFST21000" class="sort" type="button">お酒</p>
+        <p><input data-value="RSFST90000" value="RSFST90000" class="sort" type="button">その他</p>
+      </div>
+    </div>
+  </form>
+  <div id="list"></div>
+  <div class="pageing">
+    <button id = "back_page" >＜</button>
+    <div id ="page_nam"></div>
+    <button id = "next_page" >＞</button>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+   <script src="../js/str_save2.js"></script>
+   
+</body>
+</html>
